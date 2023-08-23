@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="15dp"
+    tools:context=".actsandrules">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/appbars"
+        android:background="#F6F6F6"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="127dp"
+            app:cardElevation="20dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_card"
+                    android:layout_height="127dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/card_icon"
+                        android:id="@+id/about_us_icon"
+                        android:src="@drawable/ic_wheelchair"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acts and rules"
+                        android:textSize="20sp"
+                        android:textColor="#A53964"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/appbars"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:letterSpacing="-0.01"
+                    android:onClick="check"
+                    android:text="1. Guidelines for evaluation and assessment of Austim and procedure for certification"
+                    android:textAllCaps="false"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+
+                    android:id="@+id/austim"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+
+                    android:textAlignment="viewStart"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:text="2. Guidelines and space standards for barrier free built enviroment for disabled and elderly persons "
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:letterSpacing="-0.01"
+                    android:onClick="check"
+                    android:id="@+id/barrier"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+
+                <Button
+                    android:id="@+id/certification"
+                    android:letterSpacing="-0.01"
+
+                    android:textAlignment="viewStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_card_button"
+                    android:text="3. Guidelines for evaluation of various disabilities and procedure for certification"
+                    android:textAllCaps="false"
+                    android:textColor="#EDECDD"
+                    android:textSize="15sp"
+                    android:onClick="check"
+                    app:backgroundTint="@null" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:textAlignment="viewStart"
+                    android:onClick="check"
+                    android:letterSpacing="-0.01"
+
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:text="4. Guidelines relating to national anthem"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:id="@+id/national"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+
+                app:cardCornerRadius="25dp">
+
+                <Button
+                    android:id="@+id/incheon"
+                    android:letterSpacing="-0.01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/custom_card_button"
+                    android:onClick="check"
+                    android:text="5. Incheon Strategy to Make the right real for persons with disabilities in Asia and the Pacific "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#EDECDD"
+                    android:textSize="15sp"
+                    app:backgroundTint="@null" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:onClick="check"
+                    android:letterSpacing="-0.01"
+
+                    android:textAlignment="viewStart"
+                    android:text="6. The National Trust act 1999. Rules and regulations"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:id="@+id/trust"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:letterSpacing="-0.01"
+
+                    android:text="7. Guidelines for conducting written examination for persons with disabilities"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+
+                    android:id="@+id/written"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:letterSpacing="-0.01"
+
+                    android:text="8. The Rehabilitation council of India act 1992"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+
+                    android:id="@+id/rehabilitation"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:letterSpacing="-0.01"
+
+                    android:text="9. The Rights of persons with disabilities act 2016"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+
+                    android:id="@+id/rights"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:letterSpacing="-0.01"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+
+                    android:text="10. The UN convention on the rights of persons with disability"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+
+                    android:id="@+id/un"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_alignParentBottom="true"
+        android:layout_height="53dp">
+        <Button
+            android:id="@+id/homeIconOfScheme"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            app:backgroundTint="@null"
+            android:contentDescription="@string/homeicon"
+            android:background="@drawable/custom_home_icon"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

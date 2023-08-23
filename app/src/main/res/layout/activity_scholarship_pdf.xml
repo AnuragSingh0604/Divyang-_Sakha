@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="15dp"
+    tools:context=".ScholarshipPdf">
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/appbar"
+        app:backgroundTint="@null"
+        android:background="#F6F6F6"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="53dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/adipApply"
+                android:contentDescription="@string/audioicon"
+                android:background="@drawable/custom_hindi"
+                app:backgroundTint="@null"
+                android:text="Apply"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:id="@+id/homeIconOfHindiScheme"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:backgroundTint="@null"
+                android:contentDescription="@string/homeicon"
+                android:background="@drawable/custom_home_icon"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>

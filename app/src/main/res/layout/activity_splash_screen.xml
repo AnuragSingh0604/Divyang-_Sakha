@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_splash"
+
+
+    tools:context=".splash_screen">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/scroll"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@null"
+        android:src="@drawable/custom_splash_icon"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/scroll"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/splachScareenTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:text="@string/mytitle"
+                android:textColor="#EDECDD"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/splachScareenSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/splachScareenTitle"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginEnd="85dp"
+                android:text="Ek umeed"
+                android:textColor="#EDECDD"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="15dp"
+    tools:context=".hindi_overview_of_department">
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="350dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="20dp"
+        android:id="@+id/card"
+
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_card"
+                android:layout_height="127dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/card_icon"
+                    android:id="@+id/about_us_icon"
+                    android:src="@drawable/ic_wheelchair"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="विभाग का अवलोकन"
+                    android:textSize="20sp"
+                    android:textColor="#A53964"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="30dp"
+
+
+                    android:layout_marginTop="80dp"
+
+
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_above="@+id/appbar"
+
+        android:layout_below="@id/card"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/overviewContent"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+
+
+
+
+
+
+
+
+            android:text="वर्ष 1985 और 86 के दौरान, पूर्व कल्याण मंत्रालय को दो भागों अर्थात महिला और बाल विकास विभाग और कल्याण विभाग में विभाजित किया गया था। उसी समय, अनुसूचित जाति विकास प्रभाग, जनजातीय विकास प्रभाग और अल्पसंख्यक और पिछ़डा वर्ग कल्याण प्रभाग को गृह मंत्रालय से और साथ ही श्रम मंत्रालय से वफ्फ प्रभाग को हटाकर तत्कालीन कल्याण मंत्रालय बनाया गया था।
+
+तत्पशचात, मई 1998 में मंत्रालय का नाम बदलकर सामाजिक न्याय और अधिकारिता मंत्रालय (एम /ओ एसजे एण्ड ई) कर दिया गया था। इसके अतिरिक्त अक्टूबर, 1999 में एक पृथक जनजातीय मंत्रालय की स्थापना करने हेतु जनजातीय विकास प्रभाग को हटाया गया था। जनवरी,2007 में वफ्फ यूनिट के साथ-साथ अल्पसंख्यक प्रभाग को मंत्रालय से हटा दिया गया हैं और इन्हें एक पृथक मंत्रालय के रूप में स्थापित किया गया है , और महिला और बाल विकास विभाग, महिला और बाल विकास मंत्रालय बन गया है ।
+
+यद्धपि दिव्यांगता सविधान की सातवीं अनुसूची की राज्य सूची में आता है , भारत सरकार हमेशा ही दिव्यांगता छेत्र में रही है। यह न केवल 8 राष्टरीय संस्थान (एनआई) जो विभिन्न प्रकार की दिव्यांगताओ से संबंधित है और 20 समेकित छेत्रीय केंद्र (सीआरसी),जो दिव्यांगजनों को पुनवाष सेवाए प्रदान करते हैं और पुनवाष व्यावसायिकों के लिए पाठ्यकृम चलाते हैं बल्कि साथ ही इसी प्रकार की समान सेवासे के लिए बड़ी संख्या में एनजीओ को निधियां प्रदान करती है और साथ ही नेशनल हैडिंकैप्ड फाइनेंस एण्ड डेवेल्पमेंट कारपोरेशन (एनएचएफडीसी) जो दिव्यांगजनों को स्वरोजगार के लिए रियायती दरों पर ऋण भी प्रदान करता है , को चला रही है। इसके अतिरिक्त केन्द्रीय सरकार निम्नलिखित के लिए एक पछकार है (i)एशियाई और प्रशांत छेत्र में दिव्यांगजनों की पूर्ण भागीदारी और समानता पर उदॣोषणा - दिसम्बर, 1992 में बीजिंग में अपनाई गई, और (ii)दिव्यांगजनों के अधिकारों पर सयुक्त राष्ट अधिवेशन (यूएनसीआरपीपीडी), जो मई, 2008 में प्रभावी हुआ।
+
+        इस विषय पर विभिन्न राज्य सरकारों द्वारा विभिन्न तरह से ध्यान दिया गया।चूकिं दिव्यांगता केंद्रीय स्तर पर सामाजिक न्याय और अधिकारिता मंत्रालय के कई उत्तरदायित्वों में से एक है और केवल एक ब्यूरो द्वारा इसकी देखभाल की जा रही है , अत: इसका परिणाम यह हुआ है कि इस पर पर्याप्त  ध्यान नही दिया गया है ,क्योंकि इसका अधिकांश समय और कार्य शक्ति केवल मंत्रालय की अपनी योजनाओं को कायान्वित करने, उनके व्यय और वास्तविक लछ्यों को पूरा करने और दिव्यांगजनों के लिए राष्टीय पुरस्कारों जैसी समयबद्ध वार्षिक गतिविधियों को आयोजित करने पर खर्च हो जाती है। उपयुक्त पृष्टभूमि में, 11वीं पंचवर्षीय योजना में यह उल्लेख किया गया था कि सामाजिक न्याय और अधिकारिता मंत्रालय के ‘’दिव्यांगता प्रभाग’ को एक पृथक विभाग में बदलते हुए सशक्त किया जायेगा, ताकि यह अन्य सभी संबंधित मंत्रालयों/विभागों के साथ प्रभावी रूप से सपक स्थापित कर सके और दिव्यांगजनों के प्रति अपने उत्तरदायितवों को पूरा कर सके ।‘’ ‘’दिव्यांगता’’ पर विषय की विशिष्ट प्रकृति को देखते हुए यूएनसीआरपीपीडी के आलोक में किए जाने वाले व्यापक कार्य और मौजूदा कार्यन्वयन ढांचे में कमी के कारण समय गया है कि सामाजिक न्याय और अधिकारिता मंत्रालय में मौजूदा दिव्यांगता ब्यूरो को अपग्रेड किया जाए। सरकार द्वारा सद्धाहतक रूप में 3 जनवरी, 2012 को सामाजिक न्याय और अधिकारिता मंत्रालय के भीतर एक पृथक दिव्यांगता कार्य विभाग की स्थापना करने का निणर्य लिया गया था। राष्टपति महोदय द्वारा भी 12 मार्च, 2012 को संसद के दोनों सदनों के समक्ष इसकी घोषणा की गई थी।
+
+        दिनांक 12 मई, 2012 की अधिसूचना के तहत सामाजिक न्याय और अधिकारिता मंत्रालय के अंतर्गत दो विभागों की स्थापना की गई, नामत:
+        (i)department ऑफ सोशल जस्टिस एण्ड इम्पावरमेंट (सामाजिक न्याय और अधिकारिता मंत्रालय)
+        (ii)दिव्यांगता कार्य विभाग (नि:शक्तता कार्य विभाग)
+
+        तत्पशचात इसका दिव्यांगजन सशक्तिकरण विभाग (डीईपीडब्ल्यूडी) के रूप में पुन: नामकरण किया गया है ।
+
+        प्रारंभ में डीईपीडब्ल्यूडी ने कुछ समय तक शास्त्री भवन, नई दिल्ली परिसर में कार्य किया। इसके मानव संसाधन और गतिविधियों के विस्तार के कारण विभाग का नया कार्यालय अंत्योदय भवन, सीजीओ कॉप्लेक्स, लोधी रोड , नई दिल्ली में है । "
+
+            android:textColor="#222121"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/appbar"
+        app:backgroundTint="@null"
+        android:background="#F6F6F6"
+
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#F6F6F6"
+
+
+            android:layout_height="53dp">
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:id="@+id/audioIconOfOverview"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/audioicon"
+                android:background="@drawable/custom_audioicon"
+                app:backgroundTint="@null"
+
+                />
+
+
+
+            <Button
+                android:id="@+id/homeIconOfOverview"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                app:backgroundTint="@null"
+                android:contentDescription="@string/homeicon"
+
+                android:background="@drawable/custom_home_icon"/>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>

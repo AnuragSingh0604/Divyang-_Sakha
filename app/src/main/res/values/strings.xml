@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Divyang  shakha</string>
+    <string name="department">Overview Of Department              ></string>
+    <string name="disabilities_covered"> Disabilities Covered ></string>
+    <string name="rules_regulations">Acts and Rules ></string>
+    <string name="information">Information ></string>
+    <string name="motivation">Motivational Content  ></string>
+    <string name="mytitle">दिव्यांग सखा</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="audioicon">audioIcon</string>
+    <string name="homeicon">homeIcon</string>
+    <string name="card_icon">card_icon</string>
+    <string name="overview">Overview of dep...</string>
+    <string name="line">\n</string>
+</resources>

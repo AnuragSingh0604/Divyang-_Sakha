@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="15dp"
+    tools:context=".OverviewOfDepartmentActivity">
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="350dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="20dp"
+        android:id="@+id/card"
+
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_card"
+                android:layout_height="127dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/card_icon"
+                    android:id="@+id/about_us_icon"
+                    android:src="@drawable/ic_wheelchair"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overview"
+                    android:textSize="20sp"
+                    android:textColor="#A53964"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="30dp"
+
+
+                    android:layout_marginTop="80dp"
+
+
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_above="@+id/appbar"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/card"
+       >
+
+
+
+
+       <TextView
+            android:id="@+id/overviewContent"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_marginTop="15dp"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+
+
+
+
+
+
+
+            android:text="During the year 1985-86, the erstwhile Ministry of Welfare was bifurcated into the Department of Women and Child Development and the Department of Welfare. Simultaneously, the Scheduled Castes Development Division, Tribal Development Division and the Minorities and Backward Classes Welfare Division were moved from the Ministry of Home Affairs and also the Wakf Division from the Ministry of Law to form the then Ministry of Welfare.
+
+Subsequently, the name of the Ministry was changed to the Ministry of Social Justice and Empowerment (M/o SJ and E) in May, 1998. \nFurther, in October, 1999, the Tribal Development Division had moved out to form a separate Ministry of Tribal Affairs. \nIn January, 2007, the Minorities Division along with Wakf Unit have been moved out of the Ministry and formed as a separate Ministry, and the Women and Child Development Department has become Ministry of Women and Child Development.
+
+\n         Though the subject of disabilty figures in the State List in the Seventh Schedule of the Constitution, the Government of India has always been proactive in the disability sector. It is not only running eight National Institutes (NIs) dealing with various types on disabilities and twenty Composite Regional Centers (CRCs), which provide rehabilitation services to Persons with Disabilities (PwDs) and run courses for rehabilitation professional but also funds a large number of NGOs for similar services and also a National Handicapped Finance and Development Corporation (NHFDC) which provides loans at concession rates of interest to PwDs for self-employment. Besides, the Union Government is a party to (i) Proclamation on the Full Participation and Equality of People with Disabilities in the Asian and the Pacific Region - adopted at Beijing in December, 1992, and (ii) The UN Convention on the Rights of Persons with Disabilities (UNCRPD), which came into effect in May, 2008.
+
+The subject received attention in various States Governments in varying degrees. At the Central level also disability being one of the several responsibilities of the M/o SJ and E, and being looked after by just one bureau, has resulted in inadequate attention, as most of its time and energy is spent only on implementing Ministry's own schemes, meeting their expenditure and physical targets, and organize annual time-bound activities like the National Awards for empowerment of PwDs. In the above background, it was stated in the 11th Five Year Plan that The 'Disability Division' of the Ministry of Social Justice and Empowerment will be strengthened by converting it into a separate Department  so that it can liaise effectively with all the other concerned Ministries or Departments and fulfill its responsibilities towards the disabled. Looking to the specialise nature of the subject on Disability, the wide ranging work to be done in the light of the UNCRPD, and the inadequacy of existing implementation structure, the time came to upgrade the existing Disability Bureau in the M/o SJ and E. The decision to create a separate Department of Disability Affairs within the M/o SJ and E was taken up by the Government, in principle on 3rd January, 2012. This was also announced by the President before both Houses of Parliament on 12th March, 2012.
+
+        Two departments were created under the Ministry of Social Justice and Empowerment vide notification dated 12.5.2012, namely:-
+
+        (i) Department of Social Justice a and Empowerment (Samajik Nyaya and Adhikarita Vibhag)
+
+        (ii) Department of Disability Affairs (Nishaktata Karya Vibhag)
+
+        Since renamed as Department of Empowerment of Persons with Disabilities (Divyangjan) (DEPwD)
+
+        Initially, DEPwD functioned in the premises of Shastri Bhawan, New Delhi for some time. Owing to its expansion of human resource and activities, the Department has its new office in Antodaya Bhawan, CGO Complex, Lodi Road, New Delhi."
+            android:textColor="#040000"
+            android:textSize="16sp"
+
+           android:letterSpacing="-0.01"/>
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/appbar"
+        app:backgroundTint="@null"
+        android:background="#F6F6F6"
+
+        android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="53dp">
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:id="@+id/audioIconOfOverview"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/audioicon"
+            android:background="@drawable/custom_audioicon"
+            app:backgroundTint="@null"
+
+            />
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_hindi"
+            app:backgroundTint="@null"
+            android:text="Hindi"
+            android:id="@+id/hindi"
+            android:textAllCaps="false"
+            android:textColor="#EDECDD"
+            android:layout_centerInParent="true"/>
+
+
+        <Button
+            android:id="@+id/homeIconOfOverview"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            app:backgroundTint="@null"
+            android:contentDescription="@string/homeicon"
+
+            android:background="@drawable/custom_home_icon"/>
+
+    </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+</RelativeLayout>

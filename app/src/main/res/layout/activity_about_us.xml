@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".about_us">
+
+      <androidx.cardview.widget.CardView
+
+
+          android:layout_width="350dp"
+          android:layout_height="127dp"
+          android:layout_gravity="center_horizontal"
+          app:cardElevation="20dp"
+
+          android:layout_margin="10dp"
+          app:cardCornerRadius="30dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_card"
+            android:layout_height="127dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="100dp"
+                android:contentDescription="@string/card_icon"
+                android:id="@+id/about_us_icon"
+                android:src="@drawable/ic_wheelchair"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+
+
+
+                android:textSize="20sp"
+                android:textColor="#A53964"
+                android:textStyle="bold"
+                android:layout_marginEnd="30dp"
+
+               android:layout_marginTop="80dp"
+
+
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+          </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:id="@+id/intro"
+            android:textSize="16sp"
+            android:letterSpacing="-0.01"
+           android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Divyang Sakha is an informative platform for specially abled people to notify disabled about schemes, scholarships, job opportunities and Outreach institutions. Divyang Sakha is developed by four amigos who sensed the issues and decided to solve it.
+
+
+"
+            android:textColor="#222121"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:letterSpacing="-0.01"
+
+            android:text="Mission statement - Making a change in the life of specially abled."
+            android:layout_marginEnd="5dp"
+            android:id="@+id/para2nd"
+            android:textColor="#222121"
+            android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+
+                android:id="@+id/para3rd"
+                android:letterSpacing="-0.01"
+                android:text="Vision statement - To build a space to explore opportunities and rights."
+                android:layout_marginEnd="5dp"
+                android:textColor="#222121"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="300dp"
+
+
+
+
+        >
+
+        <Button
+            android:id="@+id/audioIcon"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_audioicon"
+            android:contentDescription="@string/audioicon"
+            app:backgroundTint="@null"
+
+            />
+
+        <Button
+            android:id="@+id/homeIcon"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_home_icon"
+            android:contentDescription="@string/homeicon"
+
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6F6F6"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".typesOfDisability">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/appbars"
+        android:background="#F6F6F6"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="127dp"
+            app:cardElevation="20dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_card"
+                    android:layout_height="127dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/card_icon"
+                        android:id="@+id/about_us_icon"
+                        android:src="@drawable/ic_wheelchair"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disabilities covered"
+                        android:textSize="20sp"
+                        android:textColor="#A53964"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/appbars"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appbar"
+        android:id="@+id/recycle"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/appbar"
+        app:backgroundTint="@null"
+        android:background="#F6F6F6"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="53dp">
+
+
+            <Button
+                android:id="@+id/homeIconOfTypes"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:backgroundTint="@null"
+                android:contentDescription="@string/homeicon"
+                android:background="@drawable/custom_home_icon"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+</RelativeLayout>

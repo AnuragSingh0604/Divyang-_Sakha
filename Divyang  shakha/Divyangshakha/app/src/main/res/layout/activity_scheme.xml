@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:padding="15dp"
+    tools:context=".Scheme">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/appbars"
+        android:background="#F6F6F6"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="127dp"
+        app:cardElevation="20dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_card"
+                android:layout_height="127dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/card_icon"
+                    android:id="@+id/about_us_icon"
+                    android:src="@drawable/ic_wheelchair"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme"
+                    android:textSize="20sp"
+                    android:textColor="#A53964"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/appbars"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:letterSpacing="-0.01"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:onClick="check"
+                    android:text="Assitance to Disabled Person for Purchase/Fitting of Aids/Appliances(ADIP)"
+                    android:textAllCaps="false"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+
+                    android:id="@+id/adips"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:letterSpacing="-0.01"
+
+                    android:textAlignment="viewStart"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:text="Implementation of the Scheme for Implementation of Persons with Disabilities Act , 1995(SIDPA) "
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:onClick="check"
+                    android:id="@+id/sidpa"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+
+                <Button
+                    android:id="@+id/ddrs"
+                    android:letterSpacing="-0.01"
+
+                    android:textAlignment="viewStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_card_button"
+                    android:text="Deendayal Disabled Rehabilitation Scheme(DDRS)"
+                    android:textAllCaps="false"
+                    android:textColor="#EDECDD"
+                    android:textSize="15sp"
+                    android:onClick="check"
+                    app:backgroundTint="@null" />
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:textAlignment="viewStart"
+                    android:onClick="check"
+                    android:letterSpacing="-0.01"
+
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:text="Free Coaching for Students with Disabilities"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:id="@+id/freeCoaching"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:letterSpacing="-0.01"
+                    android:textAlignment="viewStart"
+                    android:onClick="check"
+
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:text="Incentives to Private sector employers for providing employment to persons with disabilities"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:id="@+id/providingEmployment"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:onClick="check"
+                    android:letterSpacing="-0.01"
+
+                    android:textAlignment="viewStart"
+                    android:text="The National Action plan (NAP) for skill training of persons with disabilities"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:id="@+id/nap"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="25dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:onClick="check"
+                    android:background="@drawable/custom_card_button"
+                    app:backgroundTint="@null"
+                    android:letterSpacing="-0.01"
+
+                    android:text="Awareness Generation and Publicity Scheme(AG And P Scheme "
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+
+                    android:id="@+id/adAndP"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EDECDD"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_alignParentBottom="true"
+        android:layout_height="53dp">
+        <Button
+            android:id="@+id/homeIconOfScheme"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            app:backgroundTint="@null"
+            android:contentDescription="@string/homeicon"
+            android:background="@drawable/custom_home_icon"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
